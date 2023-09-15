@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  header {
+    background-color: #1cd1b0;
+    padding: 5px;
+  }
+  .blue-white {
+    background-color: #00669f;
+    color: white;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .align-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  div.logo-container {
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    a {
+      margin-inline: 10px;
+    }
+  }
+  nav {
+    background-color: black;
+    padding: 3px;
+    ul {
+      justify-content: end;
+      li {
+        margin: 0 10px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  main {
+    flex-wrap: wrap;
+    div.addbutton {
+      font-size: 2rem;
+      border-radius: 100%;
+      position: fixed;
+      width: 34px;
+      text-align: center;
+      right: 20px;
+      top: 50vh;
+      z-index: 1;
+    }
+    section.card {
+      position: relative;
+      background-color: #f3f3f3;
+      margin: 25px;
+      width: 300px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0px 5px 5px gray;
+      padding-bottom: 8px;
+      i {
+        color: red;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 1.5rem;
+      }
+      .backround-img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      div.container {
+        margin: 10px;
+        min-height: 280px;
+        .roundedimg {
+          border-radius: 100px;
+          display: block;
+          position: absolute;
+          top: 130px;
+          left: 90px;
+          margin: auto;
+        }
+        h2 {
+          text-align: center;
+          margin-top: 80px;
+          margin-bottom: 20px;
+        }
+        button {
+          background-color: #00669f;
+          color: white;
+          padding: 10px;
+          padding-inline: 25px;
+          border: 0;
+          margin-top: 30px;
+          position: absolute;
+          bottom: 15px;
+          left: 105px;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    p {
+      display: inline-block;
+    }
+    img {
+      position: absolute;
+      right: 20px;
+      align-self: center;
+      width: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.card {
+      margin: 10px;
+  }
+  footer img {
+      width: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer p {
+      display: block;
+  }
+  footer img {
+      position: relative;
+      right: 0px;
+      align-self: center;
+      width: 15%;
+      margin-top: 5px;
+    }
+}
